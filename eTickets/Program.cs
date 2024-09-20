@@ -14,7 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Services Configration 
 builder.Services.AddScoped<IActorsService, ActorsService>();
-
+builder.Services.AddScoped<IProducersService , ProducersService>() ; 
 
 var app = builder.Build();
 
